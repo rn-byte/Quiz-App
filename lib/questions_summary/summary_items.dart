@@ -35,6 +35,7 @@ class SummaryItem extends StatelessWidget {
           // widgets
           Expanded(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   itemData['question'] as String,
@@ -43,6 +44,8 @@ class SummaryItem extends StatelessWidget {
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                   ),
+                  textAlign: TextAlign.left,
+                  //overflow: TextOverflow.ellipsis,
                 ),
                 const SizedBox(
                   height: 5,
